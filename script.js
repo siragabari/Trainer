@@ -102,6 +102,12 @@ function selectHarmony() {
                 harmonies[i].checked = false;
             }
             harmonies[harmony].checked = true;
+            color = "transparent";
+            const colors = document.getElementsByClassName("colorDisplay");
+            for(let i=0; i<colors.length; i++) {
+                colors[i].setAttribute("stroke", "grey");
+                colors[i].setAttribute("stroke-width", "0.2");
+            }
             createColors();
         });
     });
