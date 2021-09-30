@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer</title>
+    <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+    <svg id="trainer"></svg>
+
+    <div class="colorInput">
+        <label class="text">Select color:</label> 
+        <input type="color" id="color" value="#ff0000">
+    </div>
+
+    <div class="harmonies">
+        <input type="checkbox" class="checkbox" value="0" checked=true/>
+        <label class="text">Analogous</label>
+        <input type="checkbox" class="checkbox" value="1"/>
+        <label class="text">Monochromatic</label>
+        <input type="checkbox" class="checkbox" value="2"/>
+        <label class="text">Triad</label>
+        <input type="checkbox" class="checkbox" value="3"/>
+        <label class="text">Complementary</label>
+        <input type="checkbox" class="checkbox" value="4"/>
+        <label class="text">Compound</label>
+        <input type="checkbox" class="checkbox" value="5"/>
+        <label class="text">Shades</label>
+    </div>
+
+    <svg class="palette" viewBox="0 0 842 100">
+        <rect class="colorDisplay" id="colorDisplay1" x="30" width="80" height="80"></rect>
+        <rect class="colorDisplay" id="colorDisplay2" x="120" width="80" height="80"></rect>
+        <rect class="colorDisplay" id="colorDisplay3" x="210" width="80" height="80"></rect>
+        <rect class="colorDisplay" id="colorDisplay4" x="300" width="80" height="80"></rect>
+        <rect class="colorDisplay" id="colorDisplay5" x="390" width="80" height="80"></rect>
+        <rect class="colorDisplay" id="colorDisplay6" x="480" width="80" height="80"></rect>
+        <rect class="colorDisplay" id="colorDisplay7" x="570" width="80" height="80"></rect>
+        <rect class="colorDisplay" id="colorDisplay8" x="660" width="80" height="80"></rect>
+        <rect class="colorDisplay" id="colorDisplay9" x="750" width="80" height="80"></rect>
+    </svg>
+
+    <script src='script.js'></script>
+</body>
+</html>
